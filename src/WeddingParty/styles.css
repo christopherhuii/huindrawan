@@ -1,0 +1,49 @@
+.wedding-party {
+  color: #232b2b; }
+  .wedding-party__couple-wrapper {
+    display: flex;
+    justify-content: space-evenly; }
+  .wedding-party__column {
+    width: calc(50% - 45px);
+    text-align: center; }
+  .wedding-party__spouse {
+    margin-bottom: 50px; }
+    @media (max-width: 480px) {
+      .wedding-party__spouse {
+        margin-bottom: 25px; } }
+  .wedding-party__spouse-image {
+    height: 575px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-size: cover; }
+  .wedding-party__spouse-name {
+    font-family: 'Cookie';
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 15px; }
+  .wedding-party__spouse-last-name.strikethrough {
+    text-decoration: line-through; }
+  .wedding-party__role {
+    color: #e0b0ff;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-size: 20px; }
+  .wedding-party__bridal-party {
+    list-style-type: none;
+    padding: 0; }
+  .wedding-party__member {
+    margin-bottom: 30px; }
+    @media (max-width: 480px) {
+      .wedding-party__member {
+        margin-bottom: 30px; } }
+    .wedding-party__member:last-of-type {
+      margin-bottom: 0; }
+  .wedding-party__member-name {
+    font-size: 18px;
+    font-weight: 500; }
+  .wedding-party__member-role {
+    color: #e0b0ff;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600; }

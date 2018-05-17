@@ -1,0 +1,5 @@
+.section-wrapper {
+  padding: 75px 0; }
+  @media (max-width: 480px) {
+    .section-wrapper {
+      padding: 50px 0; } }

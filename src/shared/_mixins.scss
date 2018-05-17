@@ -1,0 +1,21 @@
+@mixin readingWell() {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @include phone {
+    padding: 0 15px;
+  }
+}
+
+// Screen size variables
+$screen-xs-min: 480px;  // Phones
+$screen-md-min: 768px;  // Tablets
+$screen-lg-min: 992px;  // Tablets and small desktops
+$screen-xl-min: 1170px; // Large tablets and desktops
+
+// Mixins
+@mixin phone { @media (max-width: #{$screen-xs-min}) {@content;} }
+@mixin tablet { @media (max-width: #{$screen-md-min}) {@content;} }
+@mixin desktop { @media (max-width: #{$screen-lg-min}) {@content;} }
+@mixin largeDesktop { @media (min-width: #{$screen-xl-min}) {@content;} }

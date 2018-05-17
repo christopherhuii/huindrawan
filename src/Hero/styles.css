@@ -1,0 +1,40 @@
+.hero {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hero__reading-well {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+    height: 100%;
+    position: relative; }
+    @media (max-width: 480px) {
+      .hero__reading-well {
+        padding: 0 15px; } }
+  .hero__headline {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    padding: inherit;
+    font-family: 'Cookie';
+    font-size: 12em;
+    font-weight: 400;
+    line-height: 1;
+    color: #fcfcfc; }
+    @media (max-width: 992px) {
+      .hero__headline {
+        font-size: 10em; } }
+    @media (max-width: 768px) {
+      .hero__headline {
+        font-size: 7em; } }
+    @media (max-width: 480px) {
+      .hero__headline {
+        text-align: center; } }
+    .hero__headline .italics {
+      font-style: italic; }
+    .hero__headline span {
+      display: block; }

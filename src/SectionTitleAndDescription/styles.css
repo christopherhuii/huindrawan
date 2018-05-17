@@ -1,0 +1,6 @@
+.section-title-description {
+  color: #232b2b;
+  padding: 75px 0; }
+  @media (max-width: 480px) {
+    .section-title-description {
+      padding: 50px 0; } }

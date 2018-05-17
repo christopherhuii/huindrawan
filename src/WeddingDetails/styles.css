@@ -1,0 +1,81 @@
+.wedding-details__wrapper {
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 768px) {
+    .wedding-details__wrapper {
+      flex-wrap: wrap; } }
+
+.wedding-details__column {
+  width: calc(50% - 15px); }
+  @media (max-width: 768px) {
+    .wedding-details__column {
+      width: 100%; } }
+
+.wedding-details__address {
+  margin-bottom: 1em;
+  font-style: normal; }
+  @media (max-width: 768px) {
+    .wedding-details__address {
+      text-align: center; } }
+
+.wedding-details__venue-name {
+  text-transform: uppercase; }
+
+.wedding-details__venue-name {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px; }
+
+.wedding-details__venue-address {
+  font-size: 16px;
+  margin-bottom: 5px; }
+
+.wedding-details__venue-image {
+  width: 100%; }
+
+.wedding-details__credit {
+  font-size: 11px;
+  display: block;
+  line-height: 11px;
+  text-decoration: none;
+  color: #232b2b; }
+
+.wedding-details__event-wrapper {
+  display: flex; }
+
+.wedding-details__time {
+  flex: 1 0 75px;
+  width: 20%;
+  font-size: 24px; }
+
+.wedding-details__ampm {
+  vertical-align: super;
+  text-transform: uppercase;
+  font-size: 12px; }
+
+.wedding-details__event {
+  position: relative;
+  padding: 0 0 2em 2em;
+  margin-left: 1.5em;
+  border-left: 1px solid #232b2b; }
+
+.wedding-details__event-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 3px;
+  text-transform: uppercase; }
+  .wedding-details__event-name:before {
+    position: absolute;
+    left: -5px;
+    content: ' ';
+    width: 10px;
+    height: 10px;
+    background-color: #e0b0ff;
+    border-radius: 50%; }
+
+.wedding-details__event-details {
+  display: block;
+  font-size: 14px; }

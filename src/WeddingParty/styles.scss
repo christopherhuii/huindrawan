@@ -1,0 +1,80 @@
+@import 'shared/_mixins.scss';
+@import 'shared/_colors.scss';
+
+.wedding-party {
+  color: $black;
+
+  &__couple-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__column {
+    width: calc(50% - 45px);
+    text-align: center;
+  }
+
+  &__spouse {
+    margin-bottom: 50px;
+
+    @include phone {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__spouse-image {
+    height: 575px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-size: cover;
+  }
+
+  &__spouse-name {
+    font-family: 'Cookie';
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  &__spouse-last-name {
+    &.strikethrough {
+      text-decoration: line-through;
+    }
+  }
+
+  &__role {
+    color: $accent;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-size: 20px;
+  }
+
+  &__bridal-party {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__member {
+    margin-bottom: 30px;
+
+    @include phone {
+      margin-bottom: 30px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  &__member-name {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__member-role {
+    color: #e0b0ff;
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}

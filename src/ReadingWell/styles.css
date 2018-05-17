@@ -1,0 +1,7 @@
+.reading-well {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px; }
+  @media (max-width: 480px) {
+    .reading-well {
+      padding: 0 15px; } }
