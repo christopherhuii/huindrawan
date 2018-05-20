@@ -3,6 +3,7 @@ import Hero from './Hero';
 import SectionTitleAndDescription from './SectionTitleAndDescription';
 import WeddingDetails from './WeddingDetails';
 import WeddingParty from './WeddingParty';
+import Registry from './Registry';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         />
         <WeddingDetails />
         <WeddingParty />
+        <Registry />
       </div>
     );
   }

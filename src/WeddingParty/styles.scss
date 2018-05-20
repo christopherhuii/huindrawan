@@ -7,19 +7,26 @@
   &__couple-wrapper {
     display: flex;
     justify-content: space-evenly;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
   }
 
   &__column {
     width: calc(50% - 45px);
     text-align: center;
+
+    @include tablet {
+      width: 100%;
+      &:not(:last-of-type) {
+        margin-bottom: 30px;
+      }
+    }
   }
 
   &__spouse {
     margin-bottom: 50px;
-
-    @include phone {
-      margin-bottom: 25px;
-    }
   }
 
   &__spouse-image {
@@ -27,6 +34,10 @@
     width: 100%;
     margin-bottom: 15px;
     background-size: cover;
+
+    @include phone {
+      height: 400px;
+    }
   }
 
   &__spouse-name {

@@ -63,7 +63,7 @@ const WeddingDetails = () => (
             <Event
               time="11:00"
               name="closing time"
-              description="lorem ipsum dolor sit amet note tha hte development build is not optimized."
+              description="you don't have to go home but you can't stay here."
             />
           </div>
         </div>

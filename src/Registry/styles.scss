@@ -1,0 +1,36 @@
+@import 'shared/_colors.scss';
+@import 'shared/_mixins.scss';
+
+.registry {
+  &__svg-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2em;
+  }
+
+  &__logo {
+    width: 200px;
+    margin: 15px;
+    
+    @include phone {
+      margin: 30px;
+    }
+  }
+
+  svg {
+    width: 200px;
+
+    path {
+      fill: #999;
+      transition: .2s all ease;
+    }
+
+    &:hover {
+      path {
+        fill: $accent;
+      }
+    }
+  }
+}

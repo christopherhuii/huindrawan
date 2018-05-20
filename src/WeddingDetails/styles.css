@@ -9,7 +9,9 @@
   width: calc(50% - 15px); }
   @media (max-width: 768px) {
     .wedding-details__column {
-      width: 100%; } }
+      width: 100%; }
+      .wedding-details__column:not(:last-of-type) {
+        margin-bottom: 30px; } }
 
 .wedding-details__address {
   margin-bottom: 1em;
@@ -46,8 +48,7 @@
   display: flex; }
 
 .wedding-details__time {
-  flex: 1 0 75px;
-  width: 20%;
+  flex: 0 0 75px;
   font-size: 24px; }
 
 .wedding-details__ampm {
@@ -57,7 +58,7 @@
 
 .wedding-details__event {
   position: relative;
-  padding: 0 0 2em 2em;
+  padding: 0 0 5em 2em;
   margin-left: 1.5em;
   border-left: 1px solid #232b2b; }
 

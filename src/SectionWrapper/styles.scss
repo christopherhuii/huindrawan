@@ -1,9 +1,12 @@
+@import 'shared/_colors.scss';
 @import 'shared/_mixins.scss';
 
 .section-wrapper {
-  padding: 75px 0;
+  color: $black;
+  padding: 60px 0;
 
-  @include phone {
-    padding: 50px 0;
+
+  @include tablet {
+    padding: 30px 0;
   }
 }
