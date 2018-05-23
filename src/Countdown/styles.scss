@@ -1,0 +1,62 @@
+@import 'shared/_colors.scss';
+@import 'shared/_mixins.scss';
+
+.countdown {
+  color: $white;
+  background-color: $accent;
+  
+  &__heading {
+    display: block;
+    font-family: 'Cookie';
+    font-size: 7em;
+    font-weight: 500;
+    text-align: center;
+
+    @include tablet {
+      font-size: 4em;
+    }
+  }
+
+  &__subtext {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__date {
+    display: block;
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__time-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2em;
+
+    @include tablet {
+      flex-direction: column;
+      text-align: right;
+    }
+  }
+
+  &__time {
+    font-size: 5em;
+    font-weight: 600;
+
+    @include tablet {
+      font-size: 3em;
+    }
+  }
+
+  &__time-unit {
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+}

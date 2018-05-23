@@ -21,6 +21,11 @@
 
   svg {
     width: 200px;
+    margin: 1em;
+
+    @include phone {
+      margin: 3em 1em 0;
+    }
 
     path {
       fill: #999;

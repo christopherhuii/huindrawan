@@ -32,7 +32,7 @@
   .wedding-party__spouse-last-name.strikethrough {
     text-decoration: line-through; }
   .wedding-party__role {
-    color: #e0b0ff;
+    color: #cec1e7;
     text-transform: uppercase;
     letter-spacing: 12px;
     font-size: 20px; }
@@ -50,7 +50,7 @@
     font-size: 18px;
     font-weight: 500; }
   .wedding-party__member-role {
-    color: #e0b0ff;
+    color: #cec1e7;
     font-size: 13px;
     letter-spacing: 3px;
     text-transform: uppercase;

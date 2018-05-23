@@ -27,10 +27,6 @@
     line-height: 1;
     color: $white;
 
-    @include desktop {
-      font-size: 10em;
-    }
-
     @include tablet {
       font-size: 7em;
     }
