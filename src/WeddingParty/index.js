@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import SectionWrapper from './../SectionWrapper';
 import ReadingWell from './../ReadingWell';
 import SectionTitle from './../SectionTitle';
@@ -26,10 +27,10 @@ const Spouse = ({
 );
 
 const BridalPartyMember = ({ name, type }) => (
-  <li className="wedding-party__member">
+  <div>
     <h4 className="wedding-party__member-name">{name}</h4>
     <span className="wedding-party__member-role">{type}</span>
-  </li>
+  </div>
 );
 
 const WeddingParty = () => (
@@ -38,73 +39,107 @@ const WeddingParty = () => (
       <SectionTitle title="wedding party" />
       <div className="wedding-party__couple-wrapper">
         <div className="wedding-party__column">
-          <Spouse
-            firstName="tiffany joy"
-            lastName="indrawan"
-            image="https://source.unsplash.com/1600x900/?nature,water"
-            type="bride"
-            isChangingLastName
-          />
-          <ul className="wedding-party__bridal-party">
-            <BridalPartyMember
-              name="Christina Ma"
-              type="Maid of Honor"
+          <Fade left>
+            <Spouse
+              firstName="tiffany joy"
+              lastName="indrawan"
+              image="https://source.unsplash.com/1600x900/?nature,water"
+              type="bride"
+              isChangingLastName
             />
-            <BridalPartyMember
-              name="Jessica Lee"
-              type="Bridesmaid"
-            />
-            <BridalPartyMember
-              name="Kirstie Lo"
-              type="Bridesmaid"
-            />
-            <BridalPartyMember
-              name="Hannah Lee"
-              type="Bridesmaid"
-            />
-            <BridalPartyMember
-              name="Michelle Lo"
-              type="Bridesmaid"
-            />
-            <BridalPartyMember
-              name="Emily Takei"
-              type="Bridesmaid"
-            />
-          </ul>
+          </Fade>
+          <Fade bottom cascade>
+            <ul className="wedding-party__bridal-party">
+              {/* <li> wrapper around BridalPartyMember to get the Fade to work properly */}
+              <li className="wedding-party__member">
+                <BridalPartyMember
+                  name="Christina Ma"
+                  type="Maid of Honor"
+                />
+              </li>
+              <li className="wedding-party__member">
+                <BridalPartyMember
+                  name="Jessica Lee"
+                  type="Bridesmaid"
+                />
+              </li>
+              <li className="wedding-party__member">
+                <BridalPartyMember
+                  name="Kirstie Lo"
+                  type="Bridesmaid"
+                />
+              </li>
+              <li className="wedding-party__member">
+                <BridalPartyMember
+                  name="Hannah Lee"
+                  type="Bridesmaid"
+                />
+              </li>
+              <li className="wedding-party__member">
+                <BridalPartyMember
+                  name="Michelle Lo"
+                  type="Bridesmaid"
+                />
+              </li>
+              <li className="wedding-party__member">
+                <BridalPartyMember
+                  name="Emily Takei"
+                  type="Bridesmaid"
+                />
+              </li>
+            </ul>
+          </Fade>
         </div>
         <div className="wedding-party__column">
-          <Spouse
-            firstName="christopher kam"
-            lastName="hui"
-            image="https://source.unsplash.com/1600x900/?nature,water"
-            type="groom"
-          />
-          <ul className="wedding-party__bridal-party">
-            <BridalPartyMember
-              name="Elmer Indrawan"
-              type="Groomsman"
+          <Fade right>
+            <Spouse
+              firstName="christopher kam"
+              lastName="hui"
+              image="https://source.unsplash.com/1600x900/?nature,water"
+              type="groom"
             />
-            <BridalPartyMember
-              name="Anthony Hui"
-              type="Groomsman"
-            />
-            <BridalPartyMember
-              name="Ben Khong"
-              type="Groomsman"
-            />
-            <BridalPartyMember
-              name="Gabe Yeung"
-              type="Groomsman"
-            />
-            <BridalPartyMember
-              name="Francis Chow"
-              type="Groomsman"
-            />
-            <BridalPartyMember
-              name="Felix Tsoi"
-              type="Groomsman"
-            />
-          </ul>
+          </Fade>
+          <Fade bottom cascade>
+              <ul className="wedding-party__bridal-party">
+                {/* <li> wrapper around BridalPartyMember to get the Fade to work properly */}
+                <li className="wedding-party__member">
+                  <BridalPartyMember
+                    name="Elmer Indrawan"
+                    type="Groomsman"
+                  />
+                </li>
+                <li className="wedding-party__member">
+                  <BridalPartyMember
+                    name="Anthony Hui"
+                    type="Groomsman"
+                  />
+                </li>
+                <li className="wedding-party__member">
+                  <BridalPartyMember
+                    name="Ben Khong"
+                    type="Groomsman"
+                  />
+                </li>
+                <li className="wedding-party__member">
+                  <BridalPartyMember
+                    name="Gabe Yeung"
+                    type="Groomsman"
+                  />
+                </li>
+                <li className="wedding-party__member">
+                  <BridalPartyMember
+                    name="Francis Chow"
+                    type="Groomsman"
+                  />
+                </li>
+                <li className="wedding-party__member">
+                  <BridalPartyMember
+                    name="Felix Tsoi"
+                    type="Groomsman"
+                  />
+                </li>
+              </ul>
+          </Fade>          
         </div>
       </div>
     </ReadingWell>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Zoom from 'react-reveal/Zoom';
 import './styles.css';
 
 const Hero = () => (
@@ -8,9 +9,11 @@ const Hero = () => (
   >
     <div className="hero__reading-well">
       <h1 className="hero__headline">
-        <span>we are</span>
-        <span>getting</span>
-        <span className="italics">married!</span>
+          <Zoom>
+            <span>we are</span>
+            <span>getting</span>
+            <span className="italics">married!</span>
+          </Zoom>
       </h1>
     </div>
   </div>
