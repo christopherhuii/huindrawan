@@ -2,8 +2,9 @@ import React from 'react';
 import SectionWrapper from './../SectionWrapper';
 import ReadingWell from './../ReadingWell';
 import Fade from 'react-reveal/Fade';
-
+import Media from 'react-media';
 import './styles.css';
+
 class Countdown extends React.Component {
   constructor(props) {
     super(props);
@@ -51,11 +52,26 @@ class Countdown extends React.Component {
     } = this.state;
     return (
       <SectionWrapper className="countdown">
-        <Fade top>
+        <Fade>
           <ReadingWell>
-            <span className="countdown__heading">Celebrate With Us</span>
-            <span className="countdown__date">Friday, December 14th, 2018</span>
-            <span className="countdown__date">5:00PM - 11:00PM</span>
+            <Media query={{ minWidth: 480 }}>
+              {matches =>
+                matches ? (
+                  <div>
+                    <span className="countdown__heading">Celebrate With Us</span>
+                    <span className="countdown__date">Friday, December 14th, 2018</span>
+                    <span className="countdown__date countdown__datetime">5:00PM - 11:00PM</span>
+                  </div>
+                ) : (
+                  <div>
+                    <span className="countdown__heading">Celebrate With Us</span>
+                    <span className="countdown__date">Friday</span>
+                    <span className="countdown__date">12 / 14 / 2018</span>
+                    <span className="countdown__date countdown__datetime">5:00PM - 11:00PM</span>
+                  </div>
+                )
+              }
+            </Media>
             {rendered && (
               <div className="countdown__time-wrapper">
                 <span>

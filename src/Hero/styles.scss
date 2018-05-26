@@ -8,6 +8,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @include phone {
+    background-attachment: initial;
+  }
+
   &__reading-well {
     @include readingWell;
     height: 100%;

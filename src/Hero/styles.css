@@ -4,6 +4,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media (max-width: 480px) {
+    .hero {
+      background-attachment: initial; } }
   .hero__reading-well {
     max-width: 1170px;
     margin: 0 auto;

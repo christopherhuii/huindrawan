@@ -9,11 +9,13 @@ const Hero = () => (
   >
     <div className="hero__reading-well">
       <h1 className="hero__headline">
-          <Zoom>
+        <Zoom>
+          <span>
             <span>we are</span>
             <span>getting</span>
             <span className="italics">married!</span>
-          </Zoom>
+          </span>
+        </Zoom>
       </h1>
     </div>
   </div>

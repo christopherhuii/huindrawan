@@ -22,6 +22,9 @@
     letter-spacing: 5px;
     text-align: center;
     text-transform: uppercase; }
+  @media (max-width: 480px) {
+    .countdown__datetime {
+      font-size: 1.7em; } }
   .countdown__time-wrapper {
     display: flex;
     justify-content: space-between;
@@ -31,6 +34,9 @@
       .countdown__time-wrapper {
         flex-direction: column;
         text-align: right; } }
+    @media (max-width: 480px) {
+      .countdown__time-wrapper {
+        margin-top: 1em; } }
   .countdown__time {
     font-size: 5em;
     font-weight: 600; }
