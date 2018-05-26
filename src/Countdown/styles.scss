@@ -15,6 +15,10 @@
     @include tablet {
       font-size: 4em;
     }
+
+    @include phone {
+      font-size: 3.4em;
+    }
   }
 
   &__subtext {
@@ -31,11 +35,10 @@
     letter-spacing: 5px;
     text-align: center;
     text-transform: uppercase;
-  }
 
-  &__datetime {
     @include phone {
-      font-size: 1.7em;
+      font-size: 1.5em;
+      letter-spacing: 2px;
     }
   }
 
@@ -44,11 +47,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 2em;
-
-    @include tablet {
-      flex-direction: column;
-      text-align: right;
-    }
 
     @include phone {
       margin-top: 1em;
@@ -62,11 +60,20 @@
     @include tablet {
       font-size: 3em;
     }
+
+    @include phone {
+      font-size: 1em;
+    }
   }
 
   &__time-unit {
     font-size: 20px;
     letter-spacing: 5px;
     text-transform: uppercase;
+
+    @include phone {
+      font-size: .7em;
+      letter-spacing: 2px;
+    }
   }
 }

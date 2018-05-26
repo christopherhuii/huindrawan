@@ -1,0 +1,13 @@
+.faq__question-wrapper {
+  width: 75%; }
+  @media (max-width: 768px) {
+    .faq__question-wrapper {
+      width: 100%; } }
+
+.faq__question {
+  display: block;
+  margin-bottom: 5px;
+  letter-spacing: 1px; }
+
+.faq__answer {
+  font-size: 14px; }

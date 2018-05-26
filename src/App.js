@@ -5,6 +5,8 @@ import SectionTitleAndDescription from './SectionTitleAndDescription';
 import WeddingDetails from './WeddingDetails';
 import WeddingParty from './WeddingParty';
 import Registry from './Registry';
+import Faq from './Faq';
+import Rsvp from './Rsvp';
 
 class App extends Component {
   render() {
@@ -19,6 +21,8 @@ class App extends Component {
         <WeddingDetails />
         <WeddingParty />
         <Registry />
+        <Faq />
+        <Rsvp />
       </div>
     );
   }

@@ -10,6 +10,9 @@
     @media (max-width: 768px) {
       .countdown__heading {
         font-size: 4em; } }
+    @media (max-width: 480px) {
+      .countdown__heading {
+        font-size: 3.4em; } }
   .countdown__subtext {
     display: block;
     font-size: 24px;
@@ -22,18 +25,15 @@
     letter-spacing: 5px;
     text-align: center;
     text-transform: uppercase; }
-  @media (max-width: 480px) {
-    .countdown__datetime {
-      font-size: 1.7em; } }
+    @media (max-width: 480px) {
+      .countdown__date {
+        font-size: 1.5em;
+        letter-spacing: 2px; } }
   .countdown__time-wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 2em; }
-    @media (max-width: 768px) {
-      .countdown__time-wrapper {
-        flex-direction: column;
-        text-align: right; } }
     @media (max-width: 480px) {
       .countdown__time-wrapper {
         margin-top: 1em; } }
@@ -43,7 +43,14 @@
     @media (max-width: 768px) {
       .countdown__time {
         font-size: 3em; } }
+    @media (max-width: 480px) {
+      .countdown__time {
+        font-size: 1em; } }
   .countdown__time-unit {
     font-size: 20px;
     letter-spacing: 5px;
     text-transform: uppercase; }
+    @media (max-width: 480px) {
+      .countdown__time-unit {
+        font-size: .7em;
+        letter-spacing: 2px; } }

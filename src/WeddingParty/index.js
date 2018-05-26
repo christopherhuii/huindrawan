@@ -54,7 +54,7 @@ const WeddingParty = () => (
               <li className="wedding-party__member">
                 <BridalPartyMember
                   name="Christina Ma"
-                  type="Maid of Honor"
+                  type="Matron of Honor"
                 />
               </li>
               <li className="wedding-party__member">

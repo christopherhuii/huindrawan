@@ -33,7 +33,9 @@
         font-size: 7em; } }
     @media (max-width: 480px) {
       .hero__headline {
-        text-align: center; } }
+        transform: none;
+        top: initial;
+        bottom: 60px; } }
     .hero__headline .italics {
       font-style: italic; }
     .hero__headline span {

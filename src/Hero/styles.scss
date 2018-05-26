@@ -36,7 +36,9 @@
     }
 
     @include phone {
-      text-align: center;
+      transform: none;
+      top: initial;
+      bottom: 60px;
     }
 
     .italics {

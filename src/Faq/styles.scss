@@ -1,0 +1,23 @@
+@import 'shared/_mixins.scss';
+@import 'shared/_colors.scss';
+
+.faq {
+
+  &__question-wrapper {
+    width: 75%;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &__question {
+    display: block;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
+
+  &__answer {
+    font-size: 14px;
+  }
+}
