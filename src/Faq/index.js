@@ -62,7 +62,7 @@ const Faq = () => (
           <Question question="Still have questions?" />
           <p className="faq__answer">
              If you have any additional questions, please feel free to contact the&nbsp;
-             <a className="faq__answer" href="tiff.indrawan@gmail.com">bride</a> or <a className="faq__answer" href="christopher.kam.hui@gmail.com">groom</a>.
+             <a className="faq__answer" href="mailto:tiff.indrawan@gmail.com">bride</a> or <a className="faq__answer" href="mailto:christopher.kam.hui@gmail.com">groom</a>.
           </p>
         </QuestionWrapper>
         <br /><br />
