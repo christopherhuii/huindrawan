@@ -1,6 +1,6 @@
 .section-wrapper {
   color: #232b2b;
-  padding: 60px 0; }
+  padding: 60px 30px; }
   @media (max-width: 768px) {
     .section-wrapper {
-      padding: 30px 0; } }
+      padding: 30px 15px; } }

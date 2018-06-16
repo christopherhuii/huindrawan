@@ -34,6 +34,7 @@
     width: 100%;
     margin-bottom: 15px;
     background-size: cover;
+    box-shadow: 0 2px 20px rgba(150, 150, 150, 0.45);
 
     @include phone {
       height: 400px;

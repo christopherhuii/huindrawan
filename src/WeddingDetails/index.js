@@ -29,8 +29,15 @@ const WeddingDetails = () => (
           <div className="wedding-details__column">
             <address className="wedding-details__address">
               <p className="wedding-details__venue-name">the colony house</p>
-              <p className="wedding-details__venue-address">401 N Anaheim Blvd</p>
-              <p className="wedding-details__venue-address">Anaheim, CA 92805</p>
+              <a
+                className="wedding-details__link"
+                href="https://goo.gl/maps/TLn4EEsLNEr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="wedding-details__venue-address">401 N Anaheim Blvd</p>
+                <p className="wedding-details__venue-address">Anaheim, CA 92805</p>
+              </a>
             </address>
             <img
               className="wedding-details__venue-image"
@@ -52,17 +59,17 @@ const WeddingDetails = () => (
               <Event
                 time="5:00"
                 name="ceremony"
-                description="lorem ipsum dolor sit amet note tha hte development build is not optimized."
+                description=""
               />
               <Event
                 time="5:30"
                 name="cocktail hour"
-                description="lorem ipsum dolor sit amet note tha hte development build is not optimized."
+                description=""
               />
               <Event
                 time="7:00"
                 name="reception"
-                description="lorem ipsum dolor sit amet note tha hte development build is not optimized."
+                description=""
               />
               <Event
                 time="11:00"

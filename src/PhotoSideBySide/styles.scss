@@ -1,0 +1,42 @@
+@import 'shared/_mixins.scss';
+@import 'shared/_colors.scss';
+
+.photo-side-by-side {
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+
+    @include largeDesktop {
+      justify-content: space-between;
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__column {
+    width: calc(50% - 45px);
+    text-align: center;
+
+    @include largeDesktop {
+      width: calc(50% - 15px);
+    }
+
+    @include tablet {
+      width: 100%;
+      &:not(:last-of-type) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__photo {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 2px 20px rgba(150, 150, 150, 0.45);
+  }
+}

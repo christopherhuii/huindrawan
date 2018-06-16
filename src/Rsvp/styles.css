@@ -1,5 +1,5 @@
 .rsvp {
-  background-color: #cec1e7;
+  background-color: #ce9c9c;
   text-align: center; }
   .rsvp .section-title,
   .rsvp .text {
@@ -17,4 +17,4 @@
     text-decoration: none; }
     .rsvp__button:hover {
       background-color: #fcfcfc;
-      color: #cec1e7; }
+      color: #ce9c9c; }

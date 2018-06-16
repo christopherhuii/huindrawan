@@ -1,0 +1,19 @@
+@import 'shared/_colors.scss';
+
+.footer {
+  padding: 5px 10px;
+  background-color: $accent;
+  text-align: center;
+  color: $white;
+  font-size: .75em;
+  letter-spacing: .5px;
+
+  a {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

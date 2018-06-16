@@ -9,25 +9,42 @@ class Countdown extends React.Component {
     super(props);
   
     this.state = {
-      days: 0,
-      hours: 0,
-      minutes: 0,
-      seconds: 0,
+      days: this.getRemainingDays(),
+      hours: this.getRemainingHours(),
+      minutes: this.getRemainingMinutes(),
+      seconds: this.getRemainingSeconds(),
     }
   }
-
-  countdown = () => {
+  getRemainingTime = () => {
     const currentTime = new Date().getTime();
     const targetTime = new Date('Dec 14, 2018 17:00:00').getTime();
 
-    const timeRemaining = targetTime - currentTime;
-  
+    return targetTime - currentTime;
+  }
+
+  getRemainingDays = () => (
+    Math.floor(this.getRemainingTime() / (1000 * 60 * 60 * 24))
+  )
+
+  getRemainingHours = () => (
+    Math.floor((this.getRemainingTime() % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+  )
+
+  getRemainingMinutes = () => (
+    Math.floor((this.getRemainingTime() % (1000 * 60 * 60)) / (1000 * 60))
+  )
+
+  getRemainingSeconds = () => (
+    Math.floor((this.getRemainingTime() % (1000 * 60)) / 1000)
+  )
+
+
+  countdown = () => {
     this.setState({
-      days: Math.floor(timeRemaining / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-      minutes: Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60)),
-      seconds: Math.floor((timeRemaining % (1000 * 60)) / 1000),
-      rendered: true
+      days: this.getRemainingDays(),
+      hours: this.getRemainingHours(),
+      minutes: this.getRemainingMinutes(),
+      seconds: this.getRemainingSeconds()
     });
   }
 
@@ -46,8 +63,7 @@ class Countdown extends React.Component {
       days,
       hours,
       minutes,
-      seconds,
-      rendered
+      seconds
     } = this.state;
     return (
       <SectionWrapper className="countdown">
@@ -57,26 +73,24 @@ class Countdown extends React.Component {
             <span className="countdown__date">Friday</span>
             <span className="countdown__date">December 14th, 2018</span>
             <span className="countdown__date">5:00PM - 11:00PM</span>
-            {rendered && (
-              <div className="countdown__time-wrapper">
-                <span>
-                  <span className="countdown__time">{days}</span>&nbsp;
-                  <span className="countdown__time-unit">{`day${days === 1 ? '' : 's'}`}</span>&nbsp;
-                </span>
-                <span>
-                  <span className="countdown__time">{hours}</span>&nbsp;
-                  <span className="countdown__time-unit">{`hour${hours === 1 ? '' : 's'}`}</span>&nbsp;
-                </span>
-                <span>
-                  <span className="countdown__time">{minutes}</span>&nbsp;
-                  <span className="countdown__time-unit">{`minute${minutes === 1 ? '' : 's'}`}</span>&nbsp;
-                </span>
-                <span>
-                  <span className="countdown__time">{seconds}</span>&nbsp;
-                  <span className="countdown__time-unit">{`second${seconds === 1 ? '' : 's'}`}</span>&nbsp;
-                </span>
-              </div>
-            )}
+            <div className="countdown__time-wrapper">
+              <span>
+                <span className="countdown__time">{days}</span>&nbsp;
+                <span className="countdown__time-unit">{`day${days === 1 ? '' : 's'}`}</span>&nbsp;
+              </span>
+              <span>
+                <span className="countdown__time">{hours}</span>&nbsp;
+                <span className="countdown__time-unit">{`hour${hours === 1 ? '' : 's'}`}</span>&nbsp;
+              </span>
+              <span>
+                <span className="countdown__time">{minutes}</span>&nbsp;
+                <span className="countdown__time-unit">{`minute${minutes === 1 ? '' : 's'}`}</span>&nbsp;
+              </span>
+              <span>
+                <span className="countdown__time">{seconds}</span>&nbsp;
+                <span className="countdown__time-unit">{`second${seconds === 1 ? '' : 's'}`}</span>&nbsp;
+              </span>
+            </div>
           </ReadingWell>
         </Fade>
       </SectionWrapper>

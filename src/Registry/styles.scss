@@ -2,6 +2,8 @@
 @import 'shared/_mixins.scss';
 
 .registry {
+  background-color: #f0f0f0;
+
   &__svg-wrapper {
     display: flex;
     justify-content: space-evenly;

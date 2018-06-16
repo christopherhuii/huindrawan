@@ -1,0 +1,12 @@
+.footer {
+  padding: 5px 10px;
+  background-color: #ce9c9c;
+  text-align: center;
+  color: #fcfcfc;
+  font-size: .75em;
+  letter-spacing: .5px; }
+  .footer a {
+    color: #fcfcfc;
+    text-decoration: none; }
+    .footer a:hover {
+      text-decoration: underline; }

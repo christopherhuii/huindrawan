@@ -20,7 +20,8 @@
     height: 575px;
     width: 100%;
     margin-bottom: 15px;
-    background-size: cover; }
+    background-size: cover;
+    box-shadow: 0 2px 20px rgba(150, 150, 150, 0.45); }
     @media (max-width: 480px) {
       .wedding-party__spouse-image {
         height: 400px; } }
@@ -32,7 +33,7 @@
   .wedding-party__spouse-last-name.strikethrough {
     text-decoration: line-through; }
   .wedding-party__role {
-    color: #cec1e7;
+    color: #ce9c9c;
     text-transform: uppercase;
     letter-spacing: 12px;
     font-size: 20px; }
@@ -50,7 +51,7 @@
     font-size: 18px;
     font-weight: 500; }
   .wedding-party__member-role {
-    color: #cec1e7;
+    color: #ce9c9c;
     font-size: 13px;
     letter-spacing: 3px;
     text-transform: uppercase;

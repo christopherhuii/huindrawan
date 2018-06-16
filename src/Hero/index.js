@@ -1,9 +1,10 @@
 import React from 'react';
 import Zoom from 'react-reveal/Zoom';
+import SectionWrapper from './../SectionWrapper';
 import './styles.css';
 
 const Hero = () => (
-  <div
+  <SectionWrapper
     className="hero"
     style={{ backgroundImage: "url('https://source.unsplash.com/random/1920x1080')" }}
   >
@@ -18,7 +19,7 @@ const Hero = () => (
         </Zoom>
       </h1>
     </div>
-  </div>
+  </SectionWrapper>
 );
 
 export default Hero;

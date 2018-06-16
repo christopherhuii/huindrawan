@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
 
-const SectionWrapper = ({ className, children }) => (
-  <section className={['section-wrapper', className].join(' ').trim()}>
+const SectionWrapper = ({ className, children, ...props }) => (
+  <section className={['section-wrapper', className].join(' ').trim()} {...props}>
     {children}
   </section>
 );

@@ -10,12 +10,8 @@
   .hero__reading-well {
     max-width: 1170px;
     margin: 0 auto;
-    padding: 0 30px;
     height: 100%;
     position: relative; }
-    @media (max-width: 480px) {
-      .hero__reading-well {
-        padding: 0 15px; } }
   .hero__headline {
     position: absolute;
     top: 50%;

@@ -10,7 +10,7 @@ const Rsvp = () => (
   <SectionWrapper className="rsvp">
     <ReadingWell>
       <SectionTitle title="rsvp" />
-      <Text text="Please RSVP by Sunday, November 11th, 2018." />
+      <Text text="Please RSVP by Wednesday, November 14th, 2018." />
       <Fade bottom>
         <a
           className="rsvp__button"
