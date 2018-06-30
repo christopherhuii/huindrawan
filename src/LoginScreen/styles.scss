@@ -6,13 +6,12 @@
   bottom: 0;
   left: 0;
   right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: $accent;
 
   &__field-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
   }
 
@@ -24,15 +23,45 @@
     text-transform: uppercase;
   }
 
+  &__field {
+    position: relative;
+    widtH: 320px;
+    margin: 0 auto;
+  }
+
   &__field-input {
     display: block;
     height: 36px;
     width: 100%;
     margin: 15px auto 0;
-    padding: 0 10px;
+    padding: 0px 50px 0 10px;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    &--error {
+      box-shadow: 0px 0px 3px 1px red;
+    }
+  }
+
+  &__field-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform:translateY(-50%);
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__submit {
@@ -42,6 +71,7 @@
     background-color: $accent;
     border: 1px solid $white;
     border-radius: 3px;
+    outline: none;
     color: $white;
     font-size: 1em;
     font-weight: 300;
@@ -54,5 +84,11 @@
       background-color: $white;
       color: $accent;  
     }
+  }
+
+  &__error {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
   }
 }

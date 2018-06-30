@@ -13,17 +13,20 @@ import LoginScreen from './LoginScreen';
 
 class App extends Component {
   state = {
-    isAuthenticated: false
+    isAuthenticated: false,
+    authenticationError: false
   };
 
   checkPassword = (password) => {
     if (process.env.REACT_APP_PASSWORD === password) {
       this.setState({ isAuthenticated: true });
+    } else {
+      this.setState({ authenticationError: true });
     }
   }
 
   render() {
-    const { isAuthenticated } = this.state;
+    const { authenticationError, isAuthenticated } = this.state;
     return (
       <div className="app">
         {isAuthenticated ? (
@@ -47,7 +50,7 @@ class App extends Component {
             <Footer />
           </div>
         ) : (
-          <LoginScreen onCheckPassword={this.checkPassword} />
+          <LoginScreen error={authenticationError} onCheckPassword={this.checkPassword} />
         )}
       </div>
     );
