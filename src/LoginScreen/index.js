@@ -11,10 +11,11 @@ class LoginScreen extends React.Component {
     const { onCheckPassword } = this.props;
 
     e.preventDefault();
-    onCheckPassword(document.forms.password.password.value)
+    onCheckPassword(document.forms.password.password.value);
   }
 
-  handlePasswordToggle = () => {
+  handlePasswordToggle = e => {
+    e.preventDefault();
     this.setState(prevState => {
       return {
         isPasswordRevealed: !prevState.isPasswordRevealed
