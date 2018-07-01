@@ -49,7 +49,14 @@ class LoginScreen extends React.Component {
               {isPasswordRevealed ? 'hide' : 'show'}
             </span>
           </div>
-          <button className="login-screen__submit" type="submit" form="password" value="Submit">submit</button>
+          <button
+            className="login-screen__submit"
+            type="submit"
+            form="password"
+            onClick={this.handleSubmit}
+          >
+            submit
+          </button>
           {error && (
             <div style={{ marginTop: '15px' }}>
               <p className="login-screen__error">Please enter the password printed on your RSVP card.</p>
