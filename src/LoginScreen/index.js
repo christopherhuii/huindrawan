@@ -42,9 +42,14 @@ class LoginScreen extends React.Component {
               name="password"
               spellCheck="false"
             />
-            <button className="login-screen__field-toggle" onClick={this.handlePasswordToggle}>{isPasswordRevealed ? 'hide' : 'show'}</button>
+            <span
+              className="login-screen__field-toggle"
+              onClick={this.handlePasswordToggle}
+            >
+              {isPasswordRevealed ? 'hide' : 'show'}
+            </span>
           </div>
-          <button className="login-screen__submit" type="submit" value="Submit">Submit</button>
+          <button className="login-screen__submit" type="submit" form="password" value="Submit">submit</button>
           {error && (
             <div style={{ marginTop: '15px' }}>
               <p className="login-screen__error">Please enter the password printed on your RSVP card.</p>
