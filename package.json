@@ -2,7 +2,6 @@
   "name": "chris-and-tiff",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://christopherhuii.github.io/huindrawan",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "node-sass-chokidar": "^1.2.2",
@@ -24,6 +23,7 @@
     "clean": "rm -rf node_modules/gh-pages/.cache",
     "predeploy": "npm run build",
     "deploy": "npm run clean && gh-pages -d build",
+    "build-netlify": "build-create-react-app-netlify",
     "eject": "react-scripts eject"
   }
 }
