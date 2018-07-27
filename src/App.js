@@ -18,7 +18,7 @@ class App extends Component {
   };
 
   checkPassword = (password) => {
-    if (process.env.REACT_APP_PASSWORD === password) {
+    if (process.env.REACT_APP_PASSWORD === password.toLowerCase()) {
       this.setState({ isAuthenticated: true });
     } else {
       this.setState({ authenticationError: true });
