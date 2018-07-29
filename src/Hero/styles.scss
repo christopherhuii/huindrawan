@@ -4,32 +4,34 @@
 .hero {
   height: 100vh; 
   background-attachment: fixed;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include tablet {
+    background-position: center;
+  }
 
   @include phone {
     background-attachment: initial;
   }
 
   &__reading-well {
-    @include readingWell;
     height: 100%;
     position: relative;
   }
 
   &__headline {
     position: absolute;
-    top: 50%;
+    bottom: 0;
     left: 0;
     right: 0;
-    transform: translateY(-50%);
     padding: inherit;
     font-family: 'Cookie';
     font-size: 12em;
     font-weight: 400;
     line-height: 1;
-    color: $white;
+    color: $accent;
 
     @include tablet {
       font-size: 7em;

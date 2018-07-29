@@ -17,7 +17,7 @@ class Countdown extends React.Component {
   }
   getRemainingTime = () => {
     const currentTime = new Date().getTime();
-    const targetTime = new Date('Dec 14, 2018 17:00:00').getTime();
+    const targetTime = new Date('Dec 14, 2018 16:00:00').getTime();
 
     return targetTime - currentTime;
   }
@@ -72,7 +72,7 @@ class Countdown extends React.Component {
             <span className="countdown__heading">Celebrate With Us</span>
             <span className="countdown__date">Friday</span>
             <span className="countdown__date">December 14th, 2018</span>
-            <span className="countdown__date">5:00PM - 11:00PM</span>
+            <span className="countdown__date">4:00PM - 10:00PM</span>
             <div className="countdown__time-wrapper">
               <span>
                 <span className="countdown__time">{days}</span>&nbsp;

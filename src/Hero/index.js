@@ -6,7 +6,7 @@ import './styles.css';
 const Hero = () => (
   <SectionWrapper
     className="hero"
-    style={{ backgroundImage: "url('https://source.unsplash.com/random/1920x1080')" }}
+    style={{ backgroundImage: "url('https://image.ibb.co/gOKHyo/Chris_Tiffany77.jpg')" }}
   >
     <div className="hero__reading-well">
       <h1 className="hero__headline">
