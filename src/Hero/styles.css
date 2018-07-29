@@ -30,8 +30,11 @@
     @media (max-width: 480px) {
       .hero__headline {
         transform: none;
-        top: 0;
-        font-size: 6em; } }
+        top: initial;
+        bottom: 0;
+        font-size: 6em;
+        text-align: center;
+        height: 100%; } }
     .hero__headline .italics {
       font-style: italic; }
     .hero__headline span {

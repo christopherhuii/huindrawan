@@ -13,7 +13,7 @@ const Hero = () => (
         <Zoom>
           <span>
             <span>we are</span>
-            <span>getting</span>
+            <span style={{ marginBottom: '10rem' }}>getting</span>
             <span className="italics">married!</span>
           </span>
         </Zoom>
