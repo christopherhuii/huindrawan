@@ -13,10 +13,23 @@
 
     .photo-side-by-side__column {
       width: calc(50% - 100px);
+
+      @include tablet {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      @include phone {
+        width: 100%;
+      }
     }
 
     .photo-side-by-side__photo {
       height: 600px;
+
+      @include phone {
+        height: 450px;
+      }
     }
   }
 

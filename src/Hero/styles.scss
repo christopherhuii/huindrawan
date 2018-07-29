@@ -39,8 +39,8 @@
 
     @include phone {
       transform: none;
-      top: initial;
-      bottom: 60px;
+      top: 0;
+      font-size: 6em;
     }
 
     .italics {

@@ -5,8 +5,18 @@
     justify-content: space-evenly; }
   .photo-side-by-side--portrait .photo-side-by-side__column {
     width: calc(50% - 100px); }
+    @media (max-width: 768px) {
+      .photo-side-by-side--portrait .photo-side-by-side__column {
+        width: 80%;
+        margin: 0 auto; } }
+    @media (max-width: 480px) {
+      .photo-side-by-side--portrait .photo-side-by-side__column {
+        width: 100%; } }
   .photo-side-by-side--portrait .photo-side-by-side__photo {
     height: 600px; }
+    @media (max-width: 480px) {
+      .photo-side-by-side--portrait .photo-side-by-side__photo {
+        height: 450px; } }
   .photo-side-by-side__wrapper {
     display: flex;
     justify-content: space-between; }
