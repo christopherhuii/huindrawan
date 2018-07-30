@@ -6,14 +6,17 @@ import './styles.css';
 const Hero = () => (
   <SectionWrapper
     className="hero"
-    style={{ backgroundImage: "url('https://image.ibb.co/gOKHyo/Chris_Tiffany77.jpg')" }}
+    style={{
+      backgroundImage: "url('https://image.ibb.co/eR1dPT/Chris_Tiffany77.jpg')",
+      backgroundPosition: "45% 50%"
+    }}
   >
     <div className="hero__reading-well">
       <h1 className="hero__headline">
         <Zoom>
           <span>
             <span>we are</span>
-            <span style={{ marginBottom: '10rem' }}>getting</span>
+            <span>getting</span>
             <span className="italics">married!</span>
           </span>
         </Zoom>

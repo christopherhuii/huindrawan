@@ -57,22 +57,22 @@ const WeddingDetails = () => (
             <SectionTitle title="schedule of events" />
             <div className="wedding-details__timeline">
               <Event
-                time="5:00"
+                time="4:00"
                 name="ceremony"
                 description=""
               />
               <Event
-                time="5:30"
+                time="4:30"
                 name="cocktail hour"
                 description=""
               />
               <Event
-                time="7:00"
+                time="6:00"
                 name="reception"
                 description=""
               />
               <Event
-                time="11:00"
+                time="10:00"
                 name="closing time"
                 description="you don't have to go home but you can't stay here."
               />

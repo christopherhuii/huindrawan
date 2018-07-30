@@ -15,7 +15,6 @@
     position: relative; }
   .hero__headline {
     position: absolute;
-    bottom: 0;
     left: 0;
     right: 0;
     padding: inherit;
@@ -26,15 +25,14 @@
     color: #ce9c9c; }
     @media (max-width: 768px) {
       .hero__headline {
-        font-size: 7em; } }
+        font-size: 7em;
+        bottom: 0;
+        text-shadow: 1px 1px 0 #e1c3c3; } }
     @media (max-width: 480px) {
       .hero__headline {
-        transform: none;
-        top: initial;
-        bottom: 0;
-        font-size: 6em;
-        text-align: center;
-        height: 100%; } }
+        top: 40%;
+        font-size: 5.5em;
+        text-align: center; } }
     .hero__headline .italics {
       font-style: italic; }
     .hero__headline span {

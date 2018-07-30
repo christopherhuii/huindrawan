@@ -12,7 +12,7 @@
     }
 
     .photo-side-by-side__column {
-      width: calc(50% - 100px);
+      width: calc(50% - 50px);
 
       @include tablet {
         width: 80%;
@@ -25,7 +25,7 @@
     }
 
     .photo-side-by-side__photo {
-      height: 600px;
+      height: 550px;
 
       @include phone {
         height: 450px;

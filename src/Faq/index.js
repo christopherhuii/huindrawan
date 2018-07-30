@@ -23,7 +23,7 @@ const Faq = () => (
       <Fade bottom>
         <QuestionWrapper>
           <Question question="What time should I arrive?" />
-          <Answer answer="The ceremony will begin promptly at 5:00pm." />
+          <Answer answer="The ceremony will begin promptly at 4:00pm." />
           <Answer answer="Please aim to arrive 10-15 minutes early to accommodate for unexpected Friday traffic, time to sign in, and time to find the perfect seat!" />
         </QuestionWrapper>
         <br /><br />

@@ -4,7 +4,7 @@
   .photo-side-by-side--portrait .photo-side-by-side__wrapper {
     justify-content: space-evenly; }
   .photo-side-by-side--portrait .photo-side-by-side__column {
-    width: calc(50% - 100px); }
+    width: calc(50% - 50px); }
     @media (max-width: 768px) {
       .photo-side-by-side--portrait .photo-side-by-side__column {
         width: 80%;
@@ -13,7 +13,7 @@
       .photo-side-by-side--portrait .photo-side-by-side__column {
         width: 100%; } }
   .photo-side-by-side--portrait .photo-side-by-side__photo {
-    height: 600px; }
+    height: 550px; }
     @media (max-width: 480px) {
       .photo-side-by-side--portrait .photo-side-by-side__photo {
         height: 450px; } }

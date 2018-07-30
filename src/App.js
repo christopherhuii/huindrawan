@@ -38,23 +38,23 @@ class App extends Component {
               description="Simply just testing. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
             />
             <PhotoSideBySide
-              leftPhoto={{src: 'https://image.ibb.co/n901PT/Chris_Tiffany65.jpg' }}
-              rightPhoto={{src: 'https://image.ibb.co/cXa4g8/Chris_Tiffany120.jpg' }}
+              leftPhoto={{src: 'https://image.ibb.co/czd3r8/Chris_Tiffany65.jpg' }}
+              rightPhoto={{src: 'https://image.ibb.co/ejeyPT/Chris_Tiffany120.jpg', position: '50% 90%' }}
               orientation="portrait"
               rightStaggered
             />
 
             <WeddingDetails />
             <PhotoSideBySide
-              leftPhoto={{src: 'https://image.ibb.co/gpSsW8/Chris_Tiffany136.jpg'}}
-              rightPhoto={{src: 'https://image.ibb.co/dy4T4T/Chris_Tiffany51.jpg'}}
+              leftPhoto={{src: 'https://image.ibb.co/jt1bdo/Chris_Tiffany49.jpg'}}
+              rightPhoto={{src: 'https://image.ibb.co/gpMdPT/Chris_Tiffany7.jpg'}}
               orientation="landscape"
               rightStaggered
             />
             <WeddingParty />
             <PhotoSideBySide
-              leftPhoto={{src: 'https://image.ibb.co/ganFjT/Chris_Tiffany142.jpg'}}
-              rightPhoto={{src: 'https://image.ibb.co/dwqCW8/Chris_Tiffany79.jpg' }}
+              leftPhoto={{src: 'https://image.ibb.co/cpgpW8/Chris_Tiffany142.jpg'}}
+              rightPhoto={{src: 'https://image.ibb.co/gyggB8/Chris_Tiffany38.jpg' }}
               orientation="landscape"
               rightStaggered
             />
