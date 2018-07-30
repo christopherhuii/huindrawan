@@ -23,8 +23,10 @@
 
   &__headline {
     position: absolute;
+    top: 50%;
     left: 0;
     right: 0;
+    transform: translateY(-50%);
     padding: inherit;
     font-family: 'Cookie';
     font-size: 12em;

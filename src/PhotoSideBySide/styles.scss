@@ -12,8 +12,11 @@
     }
 
     .photo-side-by-side__column {
-      width: calc(50% - 50px);
+      width: calc(50% - 100px);
 
+      @include desktop {
+        width: calc(50% - 50px);
+      }
       @include tablet {
         width: 80%;
         margin: 0 auto;
