@@ -4,16 +4,16 @@
 .hero {
   height: 100vh; 
   background-attachment: fixed;
-  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 60% bottom;
 
   @include tablet {
-    background-position: center;
+    background-position: 65% bottom;
   }
 
   @include phone {
-    background-attachment: initial;
+    background-position: 73% bottom;
   }
 
   &__reading-well {
@@ -41,7 +41,7 @@
     }
 
     @include phone {
-      top: 40%;
+      top: 30%;
       font-size: 5.5em;
       text-align: center;
     }

@@ -43,7 +43,7 @@ const Faq = () => (
             href="https://www.theknot.com/content/wedding-guest-attire-cheat-sheet"
             target="_blank"
             rel="noopener noreferrer"
-          >Cocktail Attire or Business Casual</a>
+          >Cocktail Attire or Dressy Casual</a>
           <br />
           <Answer answer="Southern California weather can be unpredictable, so please keep an eye on the weather forecast and dress comfortably." />
         </QuestionWrapper>

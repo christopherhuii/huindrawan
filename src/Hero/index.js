@@ -7,8 +7,7 @@ const Hero = () => (
   <SectionWrapper
     className="hero"
     style={{
-      backgroundImage: "url('https://image.ibb.co/eR1dPT/Chris_Tiffany77.jpg')",
-      backgroundPosition: "45% 50%"
+      backgroundImage: "url('https://image.ibb.co/ghE8Le/Chris_Tiffany79.jpg')",
     }}
   >
     <div className="hero__reading-well">
