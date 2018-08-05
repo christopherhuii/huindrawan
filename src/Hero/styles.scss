@@ -9,6 +9,7 @@
   background-position: 60% bottom;
 
   @include tablet {
+    background-attachment: initial;
     background-position: 65% bottom;
   }
 
