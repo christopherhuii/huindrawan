@@ -6,6 +6,7 @@
   background-position: 60% bottom; }
   @media (max-width: 768px) {
     .hero {
+      background-attachment: initial;
       background-position: 65% bottom; } }
   @media (max-width: 480px) {
     .hero {

@@ -15,9 +15,15 @@ class Countdown extends React.Component {
       seconds: this.getRemainingSeconds(),
     }
   }
+
   getRemainingTime = () => {
     const currentTime = new Date().getTime();
     const targetTime = new Date('Dec 14, 2018 16:00:00').getTime();
+
+    if (targetTime - currentTime <= 0) {
+      clearInterval(this.countdownInterval);
+      return 0;
+    }
 
     return targetTime - currentTime;
   }
@@ -38,6 +44,9 @@ class Countdown extends React.Component {
     Math.floor((this.getRemainingTime() % (1000 * 60)) / 1000)
   )
 
+  renderPluralIdentifier = (unit) => {
+    return unit === 1 ? '' : 's';
+  }
 
   countdown = () => {
     this.setState({
@@ -76,19 +85,19 @@ class Countdown extends React.Component {
             <div className="countdown__time-wrapper">
               <span>
                 <span className="countdown__time">{days}</span>&nbsp;
-                <span className="countdown__time-unit">{`day${days === 1 ? '' : 's'}`}</span>&nbsp;
+                <span className="countdown__time-unit">{`day${this.renderPluralIdentifier(days)}`}</span>&nbsp;
               </span>
               <span>
                 <span className="countdown__time">{hours}</span>&nbsp;
-                <span className="countdown__time-unit">{`hour${hours === 1 ? '' : 's'}`}</span>&nbsp;
+                <span className="countdown__time-unit">{`hour${this.renderPluralIdentifier(hours)}`}</span>&nbsp;
               </span>
               <span>
                 <span className="countdown__time">{minutes}</span>&nbsp;
-                <span className="countdown__time-unit">{`minute${minutes === 1 ? '' : 's'}`}</span>&nbsp;
+                <span className="countdown__time-unit">{`minute${this.renderPluralIdentifier(minutes)}`}</span>&nbsp;
               </span>
               <span>
                 <span className="countdown__time">{seconds}</span>&nbsp;
-                <span className="countdown__time-unit">{`second${seconds === 1 ? '' : 's'}`}</span>&nbsp;
+                <span className="countdown__time-unit">{`second${this.renderPluralIdentifier(seconds)}`}</span>&nbsp;
               </span>
             </div>
           </ReadingWell>
