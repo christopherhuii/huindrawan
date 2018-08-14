@@ -8,6 +8,10 @@
   background-size: cover;
   background-position: center bottom;
 
+  @media (max-width: 1024px) {
+    background-attachment: initial;
+  }
+
   @include desktop {
     background-attachment: initial;
     background-position: 30% bottom;

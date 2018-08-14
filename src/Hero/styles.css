@@ -4,6 +4,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom; }
+  @media (max-width: 1024px) {
+    .hero {
+      background-attachment: initial; } }
   @media (max-width: 992px) {
     .hero {
       background-attachment: initial;
