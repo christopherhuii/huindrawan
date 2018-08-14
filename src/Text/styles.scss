@@ -1,7 +1,13 @@
 @import 'shared/_colors.scss';
+@import 'shared/_mixins.scss';
 
 .text {
   color: $black;
   font-size: 14px;
   line-height: 32px;
+  margin-bottom: 2em;
+
+  @include phone {
+    margin-bottom: 1.5em;
+  }
 }

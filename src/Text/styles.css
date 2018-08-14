@@ -1,4 +1,8 @@
 .text {
   color: #232b2b;
   font-size: 14px;
-  line-height: 32px; }
+  line-height: 32px;
+  margin-bottom: 2em; }
+  @media (max-width: 480px) {
+    .text {
+      margin-bottom: 1.5em; } }
