@@ -29,7 +29,7 @@ const Faq = () => (
         <br /><br />
         <QuestionWrapper>
           <Question question="What's the parking situation like?" />
-          <Answer answer="The venue has a self-serve private parking lot to accommodate all of our guests." />
+          <Answer answer="The venue has a private parking lot to accommodate all of our guests." />
         </QuestionWrapper>
         <br /><br />
         <QuestionWrapper>
