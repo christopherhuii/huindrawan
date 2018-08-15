@@ -13,7 +13,7 @@
       background-position: 30% bottom; } }
   @media (max-width: 480px) {
     .hero {
-      background-position: 33% bottom; } }
+      background-position: 33% top; } }
   .hero__reading-well {
     height: 100%;
     position: relative; }
@@ -37,7 +37,7 @@
         bottom: 7%;
         left: 0;
         font-size: 6em;
-        text-align: left; } }
+        text-align: center; } }
     .hero__headline .italics {
       font-style: italic; }
     .hero__headline span {

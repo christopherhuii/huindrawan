@@ -18,7 +18,7 @@
   }
 
   @include phone {
-    background-position: 33% bottom;
+    background-position: 33% top;
   }
 
   &__reading-well {
@@ -50,7 +50,7 @@
       bottom: 7%;
       left: 0;
       font-size: 6em;
-      text-align: left;
+      text-align: center;
     }
 
     .italics {
