@@ -6,7 +6,7 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom;
+  background-position: 60% bottom;
 
   @media (max-width: 1024px) {
     background-attachment: initial;
@@ -14,11 +14,11 @@
 
   @include desktop {
     background-attachment: initial;
-    background-position: 30% bottom;
+    background-position: 65% bottom;
   }
 
   @include phone {
-    background-position: 33% top;
+    background-position: 73% bottom;
   }
 
   &__reading-well {
@@ -28,28 +28,26 @@
 
   &__headline {
     position: absolute;
-    bottom: 0;
+    top: 50%;
+    left: 0;
     right: 0;
+    transform: translateY(-50%);
     padding: inherit;
+    color: $accent;
     font-family: 'Cookie';
     font-size: 12em;
     font-weight: 400;
     line-height: 1;
-    color: $accent;
-    text-align: right;
-    text-shadow: 1px 1px 0 #e1c3c3;
-
-    @include desktop {
-      font-size: 10em;
-    }
 
     @include tablet {
+      font-size: 7em;
+      bottom: 0;
+      text-shadow: 1px 1px 0 #e1c3c3;
     }
 
     @include phone {
-      bottom: 7%;
-      left: 0;
-      font-size: 6em;
+      top: 30%;
+      font-size: 5.5em;
       text-align: center;
     }
 

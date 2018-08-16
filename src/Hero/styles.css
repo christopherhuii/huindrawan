@@ -3,40 +3,41 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom; }
+  background-position: 60% bottom; }
   @media (max-width: 1024px) {
     .hero {
       background-attachment: initial; } }
   @media (max-width: 992px) {
     .hero {
       background-attachment: initial;
-      background-position: 30% bottom; } }
+      background-position: 65% bottom; } }
   @media (max-width: 480px) {
     .hero {
-      background-position: 33% top; } }
+      background-position: 73% bottom; } }
   .hero__reading-well {
     height: 100%;
     position: relative; }
   .hero__headline {
     position: absolute;
-    bottom: 0;
+    top: 50%;
+    left: 0;
     right: 0;
+    transform: translateY(-50%);
     padding: inherit;
+    color: #ce9c9c;
     font-family: 'Cookie';
     font-size: 12em;
     font-weight: 400;
-    line-height: 1;
-    color: #ce9c9c;
-    text-align: right;
-    text-shadow: 1px 1px 0 #e1c3c3; }
-    @media (max-width: 992px) {
+    line-height: 1; }
+    @media (max-width: 768px) {
       .hero__headline {
-        font-size: 10em; } }
+        font-size: 7em;
+        bottom: 0;
+        text-shadow: 1px 1px 0 #e1c3c3; } }
     @media (max-width: 480px) {
       .hero__headline {
-        bottom: 7%;
-        left: 0;
-        font-size: 6em;
+        top: 30%;
+        font-size: 5.5em;
         text-align: center; } }
     .hero__headline .italics {
       font-style: italic; }
