@@ -43,7 +43,7 @@ const WeddingParty = () => (
             <Spouse
               firstName="tiffany joy"
               lastName="indrawan"
-              image="https://source.unsplash.com/1600x900/?nature,water"
+              image="https://image.ibb.co/jbQcoK/tiff.jpg"
               type="bride"
               isChangingLastName
             />
@@ -95,7 +95,7 @@ const WeddingParty = () => (
             <Spouse
               firstName="christopher kam"
               lastName="hui"
-              image="https://source.unsplash.com/1600x900/?nature,water"
+              image="https://image.ibb.co/fmh1Fz/chris.jpg"
               type="groom"
             />
           </Fade>
