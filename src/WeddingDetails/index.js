@@ -59,7 +59,7 @@ const WeddingDetails = () => (
               <Event
                 time="4:00"
                 name="ceremony"
-                description="watch us awkwardly kiss in public for the first time."
+                description="join us in celebrating the beginning of the rest of our lives!"
               />
               <Event
                 time="4:30"
