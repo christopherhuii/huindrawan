@@ -15,13 +15,15 @@ import LoginScreen from './LoginScreen';
 
 class App extends Component {
   state = {
-    isAuthenticated: false,
+    isAuthenticated: window.sessionStorage.getItem('authenticated') === 'true' ? true : false,
     authenticationError: false
   };
 
   checkPassword = (password) => {
     if (process.env.REACT_APP_PASSWORD === password.toLowerCase()) {
-      this.setState({ isAuthenticated: true });
+      this.setState({ isAuthenticated: true }, () => {
+        window.sessionStorage.setItem('authenticated', 'true');
+      });
     } else {
       this.setState({ authenticationError: true });
     }
