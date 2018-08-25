@@ -80,7 +80,7 @@ const Faq = () => (
                   Perfect pork anus.
                 </li>
                 <blockquote className="faq__quote">
-                  "I get to prove myself to corporate, I am possibly a father; I am so deep inside of perfectenschlag right now!"
+                  "I finally get a chance to prove myself to corporate. I am assembling a competent team. I am likely a father. I am so deep inside of perfectenschlag right now."
                 </blockquote>
                 <small className="faq__author">- Dwight Schrute</small>
               </ol>
