@@ -12,3 +12,38 @@
 .faq__answer {
   color: #232b2b;
   font-size: 14px; }
+
+.faq__word {
+  font-size: 2em;
+  font-weight: 300;
+  margin-bottom: 16px; }
+  @media (max-width: 480px) {
+    .faq__word {
+      font-size: 1.5em; } }
+
+.faq__link {
+  color: initial;
+  text-decoration: none; }
+  .faq__link:hover {
+    text-decoration: underline; }
+
+.faq__syllables {
+  font-family: Doulas;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 16px;
+  display: block; }
+  @media (max-width: 480px) {
+    .faq__syllables {
+      font-size: 1.25em; } }
+
+.faq__definitions {
+  padding: 0 15px;
+  font-size: 14px; }
+
+.faq__definition {
+  margin-bottom: 16px; }
+
+.faq__quote {
+  margin: 16px 0 14px;
+  font-style: italic; }

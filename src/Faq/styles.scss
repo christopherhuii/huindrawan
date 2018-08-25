@@ -21,4 +21,50 @@
     color: $black;
     font-size: 14px;
   }
+
+  // For Perfectenschlag question
+  &__word {
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 16px;
+
+    @include phone {
+      font-size: 1.5em;
+    }
+  }
+
+  &__link {
+    color: initial;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__syllables {
+    font-family: Doulas;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 16px;
+    display: block;
+
+    @include phone {
+      font-size: 1.25em;
+    }
+  }
+
+  &__definitions {
+    padding: 0 15px;
+    font-size: 14px;
+  }
+
+  &__definition {
+    margin-bottom: 16px;
+  }
+
+  &__quote {
+    margin: 16px 0 14px;
+    font-style: italic; 
+  }
 }
