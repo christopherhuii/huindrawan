@@ -20,7 +20,7 @@ const Faq = () => (
   <SectionWrapper className="faq">
     <ReadingWell>
       <SectionTitle title="faq" />
-      <Fade bottom>
+      <Fade>
         <QuestionWrapper>
           <Question question="What time should I arrive?" />
           <Answer answer="The ceremony will begin promptly at 4:00pm." />
