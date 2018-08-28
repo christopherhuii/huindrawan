@@ -1,0 +1,52 @@
+@import 'shared/_colors.scss';
+@import 'shared/_mixins.scss';
+
+.quote {
+  background-color: $accent;
+
+  &__reading-well {
+    max-width: 700px;
+    color: #fff;
+    text-align: center;
+  }
+
+  &__quote {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 48px;
+
+    @include phone {
+      font-size: 18px;
+    }
+  }
+
+  &__emphasis {
+    color: #dcb9b9;
+    font-weight: 600;
+  }
+
+  &__spacer {
+    height: 3px;
+    width: 40%;
+    margin: 30px auto;
+    background-color: white;
+  }
+
+  &__author {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &__second-author {
+    display: block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+}
