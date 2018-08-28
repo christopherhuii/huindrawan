@@ -4,6 +4,7 @@ import SectionTitle from './SectionTitle';
 import Hero from './Hero';
 import Countdown from './Countdown';
 import SectionWrapper from './SectionWrapper';
+import Quote from './Quote';
 import PhotoSideBySide from './PhotoSideBySide';
 import WeddingDetails from './WeddingDetails';
 import WeddingParty from './WeddingParty';
@@ -45,13 +46,13 @@ class App extends Component {
                 <p className="text">It's a mystery to both of them why they didn't start dating sooner. Maybe it was a lack of self-awareness or a lack of intentionality, but one thing is clear to them; God's timing is perfect. Here we are nine years from their first conversation and five years from their first date; Chris and Tiff are getting married!</p>
               </ReadingWell>
             </SectionWrapper>
+            <Quote />
             <PhotoSideBySide
               leftPhoto={{src: 'https://image.ibb.co/czd3r8/Chris_Tiffany65.jpg', position: '50% 75%' }}
               rightPhoto={{src: 'https://image.ibb.co/ejeyPT/Chris_Tiffany120.jpg', position: '50% 90%' }}
               orientation="portrait"
               rightStaggered
             />
-
             <WeddingDetails />
             <PhotoSideBySide
               leftPhoto={{src: 'https://image.ibb.co/jt1bdo/Chris_Tiffany49.jpg'}}
