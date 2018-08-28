@@ -41,6 +41,7 @@ class LoginScreen extends React.Component {
               type={isPasswordRevealed ? 'text' : 'password'}
               name="password"
               spellCheck="false"
+              autoFocus
             />
             <span
               className="login-screen__field-toggle"
