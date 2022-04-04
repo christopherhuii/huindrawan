@@ -95,6 +95,7 @@
   }
 
   &__event-name {
+    color: initial;
     font-size: 18px;
     font-weight: 600;
     line-height: 18px;
@@ -109,6 +110,14 @@
       height: 10px;
       background-color: $accent;
       border-radius: 50%;
+    }
+
+    &--link {
+      transition: .2s all ease;
+  
+      &:hover {
+        color: $accent;
+      }
     }
   }
 

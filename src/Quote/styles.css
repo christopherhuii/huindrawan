@@ -10,7 +10,7 @@
     line-height: 48px; }
     @media (max-width: 480px) {
       .quote__quote {
-        font-size: 18px; } }
+        font-size: 17px; } }
   .quote__emphasis {
     color: #dcb9b9;
     font-weight: 600; }

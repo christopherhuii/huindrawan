@@ -69,6 +69,7 @@
   border-left: 1px solid #232b2b; }
 
 .wedding-details__event-name {
+  color: initial;
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
@@ -82,6 +83,10 @@
     height: 10px;
     background-color: #ce9c9c;
     border-radius: 50%; }
+  .wedding-details__event-name--link {
+    transition: .2s all ease; }
+    .wedding-details__event-name--link:hover {
+      color: #ce9c9c; }
 
 .wedding-details__event-details {
   display: block;

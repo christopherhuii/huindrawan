@@ -7,18 +7,34 @@ import Fade from 'react-reveal/Fade';
 
 import './styles.css';
 
-const Event = ({ time, name, description }) => (
-  <div className="wedding-details__event-wrapper">
-    <span className="wedding-details__time">
-      {time}
-      <span className="wedding-details__ampm">pm</span>
-    </span>
-    <div className="wedding-details__event">
-      <span className="wedding-details__event-name">{name}</span>
-      <span className="wedding-details__event-details">{description}</span>
+const Event = ({ time, name, description, link }) => {
+  const TitleTag = link ? 'a' : 'span';
+  const titleProps = {};
+  
+  if (link) {
+    titleProps.target = "_blank";
+    titleProps.rel = "noopener noreferrer";
+    titleProps.href = link;
+  }
+
+  return (
+    <div className="wedding-details__event-wrapper">
+      <span className="wedding-details__time">
+        {time}
+        <span className="wedding-details__ampm">pm</span>
+      </span>
+      <div className="wedding-details__event">
+        <TitleTag
+          className={`wedding-details__event-name ${link ? 'wedding-details__event-name--link' : ''}`}
+          {...titleProps}
+        >
+          {name}
+        </TitleTag>
+        <span className="wedding-details__event-details">{description}</span>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 const WeddingDetails = () => (
   <SectionWrapper className="wedding-details">
@@ -60,21 +76,25 @@ const WeddingDetails = () => (
                 time="4:00"
                 name="ceremony"
                 description="join us in celebrating the beginning of the rest of our lives!"
+                // link="https://www.youtube.com/watch?v=M9gWyGoYoAo"
               />
               <Event
                 time="4:30"
                 name="cocktail hour"
                 description="it's actually an hour and a half. thank you for your patience while we flip the space."
+                link="https://www.youtube.com/watch?v=4f59ZtVeTr0"
               />
               <Event
                 time="6:00"
                 name="reception"
                 description="drink every time someone says 'happy wife, happy life'."
+                link="https://www.youtube.com/watch?v=5Asdw-uVeyQ"
               />
               <Event
                 time="10:00"
                 name="closing time"
                 description="you don't have to go home but you can't stay here."
+                link="https://www.youtube.com/watch?v=xGytDsqkQY8"
               />
             </div>
           </div>
